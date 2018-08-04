@@ -67,4 +67,6 @@ const RootStack = StackNavigator(
       Setting: {
         screen: Setting,
       },
-//export default HomeTab; Reserved Word
+    }
+  );
+  export default HomeTab;
