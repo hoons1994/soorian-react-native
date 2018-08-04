@@ -67,13 +67,4 @@ const RootStack = StackNavigator(
       Setting: {
         screen: Setting,
       },
-      Details: {
-        screen: DetailsScreen,
-      },
-    },
-    {
-      initialRouteName: 'Home',
-    }
-  );
-
 export default HomeTab;
