@@ -3,7 +3,7 @@ import App from './App';
 import React, {Component} from 'react';
 import {AppRegistry, StyleSheet, Text, View, TextInput, TouchableHighlight,Alert} from 'react-native';
 
-export default class App extends Component {
+export default class Login extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -15,7 +15,6 @@ export default class App extends Component {
     const { user, passwd }  = this.state ;
         if(user=='soorian'&&passwd=='123'){
           Alert.alert('test')
-          AppRegistry.registerComponent(appName, () => App);
         }
   }
   render() {

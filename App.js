@@ -1,18 +1,16 @@
 // npm install react-navigation
-// npm install react-base
+// npm install native-base
 
 import React, {Component} from 'react';
-// import {createStackNavigator} from 'react-navigation';
-// import {StyleSheet, Text, View} from 'react-native';
 import MainScreen from './Component/MainScreen';
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <MainScreen/>
     );
   }
 }
-
+export default App;
 // const AppStackNavigator = createStackNavigator({
 //   Main: {
 //     screen: MainScreen

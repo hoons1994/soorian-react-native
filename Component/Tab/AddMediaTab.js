@@ -19,7 +19,7 @@ class AddMediaTab extends Component{
                     style={{height: 40}}
                      placeholder="당신의 생각을 들려주세요."
                 />
-      </View>
+            </View>
         );
     }
 }
