@@ -4,6 +4,9 @@ import React, {Component} from 'react';
 import {AppRegistry, StyleSheet, Text, View, TextInput, TouchableHighlight,Alert} from 'react-native';
 
 export default class Login extends Component {
+  static navigationOptions = {
+      header: null
+  }
   constructor(props) {
     super(props)
     this.state = {

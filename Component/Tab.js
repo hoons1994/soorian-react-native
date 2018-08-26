@@ -1,28 +1,29 @@
 
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Platform} from 'react-native';
+import {StyleSheet, Text, View, Platform, Icon} from 'react-native';
 import {createBottomTabNavigator} from 'react-navigation';
 import HomeTab from './Tab/HomeTab';
 import SearchTab from './Tab/SearchTab';
 import AddMediaTab from './Tab/AddMediaTab';
 import LikesTab from './Tab/LikesTab';
 import ProfileTab from './Tab/ProfileTab';
-class MainScreen extends Component {
-    // static navigationOptions = {
-    //     headre: null
-    //     // headerLeft:  <Icon name = 'ios-camera-outline' style={{paddingLeft:10}}/> ,
-    //     // title: 'Instagram',
-    //     // headerRight: <Icon name='ios-send-outline' style={{paddingRight:10}}/>,
-    // }
-
+class Tab extends Component {
+    static navigationOptions = {
+        // header: null,
+        // headerLeft:  <Icon name = 'ios-camera-outline' style={{paddingLeft:10}}/> ,
+        title: 'Soorian'
+        // headerRight: <Icon name='ios-send-outline' style={{paddingRight:10}}/>
+    }
   render() {
     return (
         <AppTabNavigator/>
+        // <View>
+        //     <Text>tab</Text>
+        // </View>
     );
   }
 }
-export default MainScreen;
-
+export default Tab;
 const AppTabNavigator = createBottomTabNavigator({
     HomeTab:{
         screen:HomeTab
@@ -57,4 +58,6 @@ const AppTabNavigator = createBottomTabNavigator({
         showLabel: false,
         showIcon: true,
     }
-})
+}
+)
+
