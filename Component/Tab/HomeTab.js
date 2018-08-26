@@ -29,7 +29,7 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     }
-})})
+})
 =======
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
