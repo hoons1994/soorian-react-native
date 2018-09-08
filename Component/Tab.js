@@ -2,14 +2,14 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Platform} from 'react-native';
 import {createBottomTabNavigator} from 'react-navigation';
-import HomeTab from './Tab/HomeTab';
-import SearchTab from './Tab/SearchTab';
+import MainTab from './Tab/MainTab';
+import BoardTab from './Tab/BoardTab';
 import AddMediaTab from './Tab/AddMediaTab';
-import LikesTab from './Tab/LikesTab';
+import SettingsTab from './Tab/SettingsTab';
 import ProfileTab from './Tab/ProfileTab';
 class Tab extends Component {
     static navigationOptions = {
-        headre: null
+        header: null
         // headerLeft:  <Icon name = 'ios-camera-outline' style={{paddingLeft:10}}/> ,
         // title: 'Instagram',
         // headerRight: <Icon name='ios-send-outline' style={{paddingRight:10}}/>,
@@ -25,21 +25,27 @@ class Tab extends Component {
 }
 export default Tab;
 const AppTabNavigator = createBottomTabNavigator({
-    HomeTab:{
-        screen:HomeTab
+    // MainVC
+    Main:{
+        screen:MainTab
     },
-    Search:{
-        screen:SearchTab
+    // 게시판
+    Board:{
+        screen:BoardTab
     },
+    // 글쓰기
     AddMedia:{
         screen: AddMediaTab
     },
-    Likes:{
-        screen:LikesTab
-    },
+    // 내정보
     Profile:{
         screen:ProfileTab
-    }
+    },
+    // 세팅
+    Settings:{
+        screen:SettingsTab
+    },
+    
 }, {
     animationEnabled: true,
     swipeEnabled: true,

@@ -16,10 +16,10 @@ class LoginVC extends Component {
       }
       click = () =>{
         const { user, passwd }  = this.state ;
-            if(user=='123'&&passwd=='123'){
+            // if(user=='123'&&passwd=='123'){
             //   Alert.alert('test')
             this.props.navigation.navigate('TabVC')
-            }
+            // }
       }
       render() {
         return (
