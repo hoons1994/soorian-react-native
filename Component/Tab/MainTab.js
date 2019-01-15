@@ -106,12 +106,12 @@ class View1 extends Component{
                                 <View style={styles.left}>
                                     <View style={styles.title}>
                                         <Text onPress={this.GetItem.bind(this,item.date)} style={styles.txt_title}>
-                                            {item.email}
+                                            {item.title}
                                         </Text>
                                     </View>
                                     <View style={styles.sub_title}>
                                             <Text style={styles.txt_subtitle}>
-                                                {item.title}
+                                                {item.email}
                                             </Text>
                                             <Text style={styles.txt_subtitle}>
                                                 {item.date}

@@ -32,8 +32,8 @@ class AddMediaTab extends Component{
 			},
 			body:JSON.stringify({
 				title: txttitle,
-				email: 'kbw2204',
-				date: '18.18.18',
+				email: '융융이가젤조아',
+				date: '18.3.22',
 			})
 			
 		})
