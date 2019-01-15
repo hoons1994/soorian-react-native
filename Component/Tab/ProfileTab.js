@@ -1,4 +1,4 @@
-import React, {Component }from 'react';
+import React, {Component}from 'react';
 import {
     View,
     Text,
@@ -7,7 +7,7 @@ import {
     TouchableOpacity,
     Button
 } from 'react-native';
-import { Icon, Container, Content, Thumbnail, Header, Left, Right, Body } from 'native-base';
+import { Icon, Content, Thumbnail, Header, Left, Right, Body } from 'native-base';
 import {createStackNavigator} from 'react-navigation';
 
 class ProfileTab extends Component{
@@ -30,32 +30,32 @@ class ProfileVC extends Component{
     }
     render(){
         return(
-            <Container style = {style.container}>
+            <View style = {style.container}>
                 {/* <Header>
                     <Body><Text style={{fontWeight:'900'}}>Soorian</Text></Body>
                 </Header> */}
                 {/* <Content> */}
-                <Container style = {style.wrap}>
-                    <Container style = {[style.text, {flex:3, flexDirection: 'row'}]}>
+                <View style = {style.wrap}>
+                    <View style = {[style.text, {flex:3, flexDirection: 'row'}]}>
                         {/* <TouchableOpacity onPress={() => alert('test')}> */}
-                            <Container style={{flex:1}}>
-                                <Image source={require('../../assets/soorian.png')}
+                            <View style={{flex:1}}>
+                                <Image source={require('../../assets/cat.jpg')}
                                 style={{width:75, height:75, borderRadius:10}}/>
-                            </Container>
-                            <Container style={{flex:3, flexDirection: 'column', padding: 15}}>
-                                {/* <Container style={{flex:1}}> */}
+                            </View>
+                            <View style={{flex:3, flexDirection: 'column', padding: 15}}>
+                                {/* <View style={{flex:1}}> */}
                                     <Text style={{fontSize:20}}>Nickname</Text>
-                                {/* </Container>
-                                <Container style={{flex:1, flexDirection: 'row'}}> */}
-                                <Container style={{flexDirection: 'row'}}>
+                                {/* </View>
+                                <View style={{flex:1, flexDirection: 'row'}}> */}
+                                <View style={{flexDirection: 'row'}}>
                                     <Text style={{flex:1}}>Name</Text>
                                     <Text style={{flex:1}}>Id</Text>
-                                </Container>
-                                {/* </Container> */}
-                            </Container>
+                                </View>
+                                {/* </View> */}
+                            </View>
                         {/* </TouchableOpacity> */}
-                    </Container>
-                    <Container style = {[style.text, {flex:1, flexDirection: 'row', padding:0}]}>
+                    </View>
+                    <View style = {[style.text, {flex:1, flexDirection: 'row', padding:0}]}>
                         {/* <TouchableOpacity onPress={() => alert('test')}> */}
                             {/* <Button> */}
                                 <Text style = {style.button}>게시글</Text>
@@ -70,15 +70,15 @@ class ProfileVC extends Component{
                                 <Text style = {style.button}>알람</Text>
                             {/* </Button> */}
                         {/* </TouchableOpacity> */}
-                    </Container>
-                    <Container style = {[style.text, {flex:14, backgroundColor: 'red'}]}>
+                    </View>
+                    <View style = {[style.text, {flex:14, backgroundColor: 'red'}]}>
                         <Content>
                             <Text>ListView</Text>
                         </Content>
-                    </Container>
-                </Container>
+                    </View>
+                </View>
                 {/* </Content> */}
-            </Container>
+            </View>
         );
     }
 }
@@ -97,15 +97,13 @@ const style = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white'
-        
     },
     wrap: {
         flex: 1,
-        backgroundColor: 'gray',
         flexDirection: 'column'
     },
     text: {
-        padding: 10
+        padding: 10,
         // alignItems: 'center',
         // justifyContent: 'center'
     },
@@ -113,11 +111,10 @@ const style = StyleSheet.create({
         flex: 1,
         // alignItems: 'center',
         // justifyContent: 'center',
-        textAlignVertical: 'center', // Android
+        // textAlignVertical: 'center', // Android
+        lineHeight: 30,
         textAlign:'center',
-        color: 'blue',
-        backgroundColor: 'transparent',
-        borderColor: '#999',
-        borderWidth: 1,
+        color: 'black',
+        backgroundColor: '#1476e3',
     }
 })
